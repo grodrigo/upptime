@@ -11,9 +11,9 @@ sites:
     url: https://news.ycombinator.com
   - name: Recreo
     url: https://recreo.gba.gob.ar
-  - name: Secret Site
+  - name: RECREO_SITE
     url: $RECREO_SITE
-  - name: Secret Site
+  - name: RECREO_SITE
     url: $RECREO_SITE/admin/login
     method: POST
     body: '{ "email": "$RECREO_USER", "password": "$RECREO_PASSWORD"}'
