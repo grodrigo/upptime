@@ -1,17 +1,14 @@
 # Change these first
 owner: grodrigo # Your GitHub organization or username, where this repository lives
 repo: upptime # The name of this repository
+TZ: America/Argentina/Buenos_Aires
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
   - name: Hacker News
     url: https://news.ycombinator.com
   - name: Recreo
     url: https://recreo.gba.gob.ar
-  - name: RECREO_SITE
+  - name: $RECREO_SITE
     url: $RECREO_SITE
   - name: RECREO_SITE
     url: $RECREO_SITE/admin/login
