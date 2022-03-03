@@ -14,9 +14,9 @@ sites:
   - name: Secret Site
     url: $RECREO_SITE
   - name: Secret Site
-    url: $RECREO_SITE
+    url: $RECREO_SITE/admin/login
     method: POST
-    body: '{ "user": "$USER_RECREO", "user": "$USER_PASSWORD"}'
+    body: '{ "email": "$RECREO_USER", "password": "$RECREO_PASSWORD"}'
     expectedStatusCodes:
       - 419
 
