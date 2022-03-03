@@ -8,7 +8,7 @@ sites:
     url: https://news.ycombinator.com
   - name: Recreo
     url: https://recreo.gba.gob.ar
-  - name: $RECREO_SITE
+  - name: RECREO_SITE
     url: $RECREO_SITE
   - name: RECREO_SITE
     url: $RECREO_SITE/admin/login
@@ -16,6 +16,13 @@ sites:
     body: '{ "email": "$RECREO_USER", "password": "$RECREO_PASSWORD"}'
     expectedStatusCodes:
       - 419
+  - name: recreo api test
+    url: https://test.recreo.gba.gob.ar/graphql
+    method: POST
+    headers:
+      - 'clientinformation: web'
+      - 'Content-Type: application/json'
+    body: '{"query":"mutation\n{login_simple(grant_type: \"password\",\n    client_id: \"4\",\n    client_secret: \"$RECREO_CLIENT_SECRET\",\n    $RECREO_API_USERNAME: \"recreo.admin@yopmail.com\",\n    $RECREO_API_PASSWORD: \"admin\") \n{access_token}\n}","variables":{}}'
 
 assignees: # Users to assign downtime issues (optional)
   - grodrigo
