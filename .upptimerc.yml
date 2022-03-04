@@ -4,8 +4,6 @@ repo: upptime # The name of this repository
 TZ: America/Argentina/Buenos_Aires
 
 sites:
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
   - name: Hacker News
     url: https://news.ycombinator.com
   - name: Recreo
