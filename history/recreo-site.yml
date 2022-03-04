@@ -1,7 +1,7 @@
-url: $RECREO_SITE/admin/login
+url: $RECREO_SITE
 status: up
-code: 419
-responseTime: 214
-lastUpdated: 2022-03-04T00:50:04.882Z
+code: 200
+responseTime: 222
+lastUpdated: 2022-03-04T00:52:06.501Z
 startTime: Thu Mar 03 2022 15:03:43 GMT+0000 (Coordinated Universal Time)
 generator: Upptime <https://github.com/upptime/upptime>
